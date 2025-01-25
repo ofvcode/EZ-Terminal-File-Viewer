@@ -90,19 +90,14 @@ def ShowLocation():
 def Startup():
     print("You are currently in:")
 
-def mainMenu():
+def menuScreen():
     refreshScreen()
     ShowLocation()
     directoryFormat()
     menuOptions()
 
-def CurrentScreen():
-    refreshScreen()
-    ShowLocation()
-    directoryFormat()
-    menuOptions()
 
 
 ####################################################################
 
-mainMenu()
+menuScreen()
