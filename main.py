@@ -18,6 +18,7 @@ def optionChecker(optionChosen):
         optionTwo()
         menuScreen()
     else:
+        refreshScreen()
         print("\nExiting..\n")
         exit()
 
