@@ -32,16 +32,16 @@ def main():
         dirListFormatted = reformat()
 
         print(dirListFormatted)
-        print("\n(1) Move to Specific Directory , (2) Exit, (3) Move out of Folder")
+        print("\n(1) Move to Specific Directory , (2) Move out of folder, (3) Exit")
         userInput = chooseFunc()
         while True:
           if int(userInput) == 1  or int(userInput) == 2 or int(userInput) == 3:
-             if int(userInput) == 2:
+             if int(userInput) == 3:
                   os.system('clear')
                   print("\nEZ Terminal File Viewer:")
                   print("\nExiting.")
                   exit()
-             elif int(userInput) == 3:
+             elif int(userInput) == 1:
                  os.system('clear')
                  print("EZ Terminal File Viewer:\n")
                  print("Move into which folder?:\n")
