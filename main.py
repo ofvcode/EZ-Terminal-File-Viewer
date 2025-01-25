@@ -12,17 +12,11 @@ def optionChecker(optionChosen):
     if int(optionChosen) == 1:
         chosenFolder = chooseFolder()
         optionOne(chosenFolder)
-        refreshScreen()
-        ShowLocation()
-        directoryFormat()
-        menuOptions()
+        menuScreen()
 
     elif int(optionChosen) == 2:
         optionTwo()
-        refreshScreen()
-        ShowLocation()
-        directoryFormat()
-        menuOptions()
+        menuScreen()
     else:
         print("\nExiting..\n")
         exit()
