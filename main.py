@@ -5,11 +5,35 @@ def menuOptions():
       print("\n* Move into Directory (1)")
       print("* Move out Directory (2)")
       print("* Exit Program (3)\n")
-      return chooseOption()
-      
+      optionChecker(chooseOption())
+
+
+def optionChecker(optionChosen):
+    if int(optionChosen) == 1:
+        chosenFolder = chooseFolder()
+        optionOne(chosenFolder)
+        refreshScreen()
+        ShowLocation()
+        directoryFormat()
+        menuOptions()
+
+    elif int(optionChosen) == 2:
+        optionTwo()
+        refreshScreen()
+        ShowLocation()
+        directoryFormat()
+        menuOptions()
+    else:
+        print("\nExiting..\n")
+        exit()
+
 def optionOne(location):
     # Moves to directory chosen
     os.chdir(location)
+
+def optionTwo():
+     # Moves back a directory
+     os.chdir("..")
 
 
 def directoryFormat():
