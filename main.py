@@ -96,6 +96,13 @@ def mainMenu():
     directoryFormat()
     menuOptions()
 
+def CurrentScreen():
+    refreshScreen()
+    ShowLocation()
+    directoryFormat()
+    menuOptions()
+
+
 ####################################################################
 
 mainMenu()
