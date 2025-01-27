@@ -40,6 +40,8 @@ def folderOptionChecker(optionChosen):
     elif int(optionChosen) == 3:
         removeFile(askDirectoryName(int(optionChosen)))
         menuScreen()
+    elif int(optionChosen) == 4:
+        menuScreen()
     else:
         exitProgram()
 
@@ -98,7 +100,8 @@ def folderOperators():
       print("\n* Make Directory (1)")
       print("* Remove Directory (2)")
       print("* Remove File (3)")
-      print("* Exit Program (4)\n")
+      print("* Go Back (4)")
+      print("* Exit Program (5)\n")
       folderOptionChecker(chooseOption()) 
         
 
